@@ -1,0 +1,77 @@
+@import url("../estilos.css");
+
+main{
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* estilo dos botões */
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.service-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px;
+	cursor: pointer;
+    border-radius: 5px;
+}
+
+.service-button:hover{
+	background-color: #1c421e;
+    color:#4CAF50;
+}
+
+/* estilo das páginas de lista de usuários e contas */
+.users-page,
+.accounts-page {
+	display: none;
+}
+
+.users-page table,
+.accounts-page table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.users-page th,
+.accounts-page th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.users-page td,
+.accounts-page td {
+	text-align: center;
+	padding: 8px;
+}
+
+.users-page tr:nth-child(even),
+.accounts-page tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* estilo das páginas quando estão visíveis */
+.visible {
+	display: block;
+}
+
+.perfil{
+    font-size: 30px;
+}
+
+.fa-circle-user{
+    margin-right: 20px;
+}

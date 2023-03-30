@@ -1,0 +1,91 @@
+@import url("../estilos.css");
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.marketing{
+    display: flex;
+    justify-content: center;}
+
+/* Estilos para o banner */
+.banner {
+    position: relative;
+    height: 400px;
+}
+    
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+    
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+    
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+    
+.btn-primary {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+    
+.btn-primary:hover {
+    background-color: #3d8e41;
+}
+    
+    /* Estilos para os destaques */
+.destaques {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+    
+.destaque-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+    
+.destaque-card img {
+    width: 200px;
+    margin-right: 2rem;
+}
+    
+.destaque-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+    
+.destaque-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.perfil{
+    font-size: 30px;
+}
+
+.fa-circle-user{
+    margin-right: 20px;
+}

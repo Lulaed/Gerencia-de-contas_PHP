@@ -1,0 +1,185 @@
+@import url("../estilos.css");
+
+body{
+    background: #fffff3;
+}
+
+header{
+    background-color: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+/* register Card */
+.register-card {
+    width: 450px;
+    background: #444;
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.register-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #333;
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+/* ---------- */
+
+/* register Card Logo */
+.register-card-logo {
+    margin-bottom: 2rem;
+}
+
+.register-card-logo img {
+    width: 60px;
+}
+/* ---------- */
+
+/* register Card Standard */
+.register-card-logo,
+.register-card-header,
+.register-card-footer {
+    text-align: center;
+}
+
+#page-login {
+    text-decoration: none;
+    color: #fffff3;
+}
+
+#page-login:hover {
+    text-decoration: underline;
+}
+/* ---------- */
+
+/* register Card Header */
+.register-card-header {
+    margin-bottom: 2rem;
+}
+
+.register-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.register-card-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+/* ---------- */
+
+/* register Card Form */
+.register-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.register-card-form .form-item {
+    position: relative;
+}
+
+.register-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.register-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.register-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* register Card Footer */
+.register-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+/* ---------- */
+
+/* register Card Form Elements */
+.register-card input[type="text"],
+.register-card input[type="password"],
+.register-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: #333;
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.register-card input:focus {
+    background: white;
+}
+
+.register-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+#anc-login{    
+    background: black;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.register-card button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.register-card button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+/* ---------- */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .register-card {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+/* ---------- */
